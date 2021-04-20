@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survive2020</title>
+
+  <!-- The next lines of links are used for the favicon of the website made with Favicon.io -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="game_choice.html">
+  <!-- The social media icons use the ShareThis.com website tool -->
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=607d6a5679e37600184ef654&product=sticky-share-buttons"
+    async="async"></script>
+  <!-- The pop-up windows that are displayed when you click on the "About" and "Contact" buttons are created with the framework "Boostrap" -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- The stylesheet connected to this file -->
+  <link rel="stylesheet" href="homepage_design.css">
+</head>
+
+<body>
+  <!-- Three main buttons acting as a navigation in the game -->
+  <div class="buttons">
+    <button class=" button button--play" onclick="window.location.href='game_choice.html' " type="button"> PLAY
+    </button>
+    <button type="button" class=" button button--about" data-toggle="modal" data-target="#myModal"> ABOUT </button>
+
+    <button type="button" class="button button--contact" data-toggle="modal" data-target="#myModal2"> CONTACT</button>
+  </div>
+
+  <!-- Bootstrap modal for "About" section -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+      <div class="modal-dialog vertical-align-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">About</h4>
+          </div>
+          <div class="modal-body">
+            Survive2020 is a game developed as a project for the module Web Technologies at Edinburgh Napier University
+            by Iliyana Pirinska. The requirements for the project was to create a "choose-your-own-adventure" text style
+            game with HTML, CSS and JavaScript.
+            <br> <br>
+            The goal of the game is to raise awareness of what has happened during the year 2020 engagingly. Survive2020
+            offers customisation by adding your name and choosing an assistant who will guide you throughout your game
+            experience.
+            <br> <br>
+            Moreover, to create a more satisfying user experience and atmosphere, the game offers selected videos and
+            articles connected to real-life events that the script is inspired from.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap modal for "Contact" section -->
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="vertical-alignment-helper">
+      <div class="modal-dialog vertical-align-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Contact </h4>
+          </div>
+          <div class="modal-body form-horizontal">
+            <!-- The form layout is correctly displayed. However, it is not functioning. This feature will be implemented as future improvement -->
+            <form class="form-horizontal" role="form" action="email.php" method="POST">
+              <div class="form-group">
+                <label for="name" class="control-label col-xs-2">Full name</label>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" name="name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="control-label col-xs-2">Subject</label>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" name="subject">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="control-label col-xs-2">Email</label>
+                <div class="col-xs-10">
+                  <input type="email" class="form-control" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="control-label col-xs-2">Message</label>
+                <div class="col-xs-10">
+                  <textarea class="form-control" name="message"></textarea>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- This is the code for the social buttons displayed on the right side of the pages  -->
+  <div class="sharethis-sticky-share-buttons"></div>
+</body>
+
+</html>

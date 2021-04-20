@@ -1,0 +1,350 @@
+/* declaring box-sizing and font-size for whole file */
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+    font-size: 0.7vw;
+
+}
+
+/* most of the attributes have "!important" because of the bootstrap stylesheet that needed to be ovverided to change it  */
+.card {
+
+    max-height: 95% !important;
+    margin-top: 3px !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+    border-radius: 1vmax !important;
+    box-shadow: grey !important;
+
+}
+
+/* images class  */
+.w-100 {
+    border-radius: 1vmax;
+}
+
+/* body gradient background colour */
+body {
+
+    background: linear-gradient(to right, #2b5876, #4e4376) !important;
+    font-family: 'Roboto';
+    height: 100vh;
+
+}
+
+/* class used for toggling the mode */
+.white-mode {
+
+    background: linear-gradient(to right, #8e9eab, #eef2f3) !important;
+    font-family: 'Roboto';
+    height: 100vh;
+}
+
+
+/* styling the main script box */
+.main_script_box {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
+    max-height: 57%;
+    padding: 10px;
+    width: 1000px;
+    max-width: 45%;
+    background-color: #ffffff;
+    border-radius: 1vmax;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+}
+
+/* styling the game script */
+.script {
+    padding: 0.9em 1.2em;
+    margin: 0 0.4em 0.4em 0;
+
+}
+
+/* the options grid class is displayed in flex and has a grid of two columns */
+.options_grid {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+/* styling the options */
+.option {
+
+    border: none;
+    padding: 0.9em 1.2em;
+    margin: 0 0.2em 0.4em 0;
+    color: white;
+    border-radius: 0.5vmax;
+    background-color: #8C1440;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.option:hover {
+    background-color: black;
+    color: white;
+}
+
+/* toggle mode button styling */
+#toggleMode {
+    border: none;
+    color: black;
+    border-radius: 1.5vmax;
+    background-color: white;
+    transition: all 0.2s;
+    text-align: center;
+    height: 5%;
+    width: 10%;
+    max-height: 5%;
+    max-width: 10%;
+    position: absolute;
+    left: 14%;
+    top: 5.5%;
+}
+
+#toggleMode:hover {
+    background-color: black;
+    color: white;
+}
+
+/* the articles box styling */
+.articles_box {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    -webkit-transform: translate(-15%, -30%);
+    transform: translate(-15%, -30%);
+
+    padding: 10px;
+    width: 600px;
+    max-width: 12%;
+    height: 1000px;
+    max-height: 50%;
+    background-color: #ffffff;
+    border-radius: 1vmax;
+
+
+}
+
+/* styling the videos box */
+.videos_box {
+    position: absolute;
+    left: 85%;
+    top: 30%;
+    -webkit-transform: translate(-85%, -30%);
+    transform: translate(-85%, -30%);
+
+    padding: 10px;
+    width: 600px;
+    height: 1000px;
+    max-height: 50%;
+    max-width: 12%;
+
+    background-color: #ffffff;
+    border-radius: 1vmax;
+
+
+}
+
+
+/* styling the player box */
+.player_details_box {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    -webkit-transform: translate(-50%, -5%);
+    transform: translate(-50%, -5%);
+    height: 7%;
+    max-height: 7%;
+    width: 55%;
+    max-width: 50%;
+    background-color: #ffffff;
+    border-radius: 1vmax;
+    /* the content is displayed with grid that has one row with five columns */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* styling the columns itselves  */
+.name,
+.health,
+.money,
+.location,
+.month {
+    font-family: 'Bebas Neue' !important;
+    font-size: 0.9vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    gap: 1vmax;
+}
+
+/* resiging the images as they were not in the correct size and making them responsive */
+.imgHealth,
+.imgMoney {
+    width: 38% !important;
+    height: 38% !important;
+    max-width: 28% !important;
+    max-height: 28% !important;
+}
+
+.imgName,
+.imgMonth,
+.imgLocation {
+    width: 20% !important;
+    height: 20% !important;
+    max-height: 30% !important;
+    max-width: 30% !important;
+}
+
+/* styling the box that contains the map */
+.map_box {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    -webkit-transform: translate(-50%, -95%);
+    transform: translate(-50%, -95%);
+    height: 25%;
+    max-height: 25%;
+    padding: 20px;
+    width: 75%;
+    max-width: 75%;
+
+    background-color: #ffffff;
+    border-radius: 1vmax;
+
+}
+
+/* styling the map  */
+#map {
+    height: 100%;
+    width: 100%;
+    border-radius: 1vmax;
+}
+
+/* videos embedded */
+#iframe1,
+#iframe2,
+#iframe3 {
+    width: 10vw;
+    height: 6.5vw;
+    border-radius: 1vmax;
+}
+
+
+/* styling the videos grid  */
+.videos_grid {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+/* making the assistant image responsive */
+#assistant {
+    position: absolute;
+    top: 42%;
+    left: 0.5% !important;
+    height: 55% !important;
+    max-height: 55% !important;
+    max-width: 12% !important;
+    width: 12% !important;
+
+
+}
+
+/* drawing the bubble box and its pointer with css */
+.bubble {
+    position: absolute;
+    left: 2%;
+    top: 28%;
+    -webkit-transform: translate(-5%, -30%);
+    transform: translate(-5%, -30%);
+    padding: 10px;
+    width: 10%;
+    max-width: 10%;
+    height: 15%;
+    max-height: 15%;
+    background-color: #ffffff;
+    border-radius: 1vmax;
+    overflow: auto;
+    scrollbar-base-color: grey;
+}
+
+.pointer {
+    height: 5%;
+    max-height: 5%;
+    max-width: 5%;
+    width: 5%;
+    background: white;
+    position: absolute;
+    left: 3%;
+    top: 32%;
+    -webkit-transform: translate(-5%, -32%);
+    transform: translate(-5%, -32%);
+    transform: rotate(45deg);
+    border-radius: 0 0 0.3vmax 0;
+}
+
+/* limit the text in the bubble box */
+#assistantChat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+/* resizing audio as it was too big for the game layout and design */
+audio {
+    display: block;
+    height: 5%;
+    width: 10%;
+    max-height: 5%;
+    max-width: 10%;
+    position: absolute;
+    left: 76%;
+    top: 5.5%;
+
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: white !important;
+    border-radius: 0.7vmax !important;
+}

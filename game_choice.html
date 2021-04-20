@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the connected stylesheet -->
+    <link rel="stylesheet" href="choice_design.css">
+    <title>Survive2020</title>
+    <!-- Connect to the Javascript code for the current file -->
+    <script src="choice_game.js" defer></script>
+    <!-- Code for favicon icon made with Favicon.io website tool -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="game_choice.html">
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=607d6a5679e37600184ef654&product=sticky-share-buttons"
+        async="async"></script>
+</head>
+
+<body>
+    <!-- Image logo -->
+    <img class="logo" src="images/logo.png" alt="logo">
+    <!-- Introduction paragraph -->
+    <p> Before you start you need to put your nickname and choose an assistant. But what is an assistant? The assistant
+        will support you with advice and facts based on your current journey. We offer you to choose from two highly
+        educated professionals. Both of them will help you and make you feel as you are on a world adventure with a
+        friend.</p>
+    <!--  Form that take the player name and preference on which assistant they chose. The data is saved via Web Storage Api  using localStorage. -->
+    <form>
+        <div class="remember_name">
+            <label for="putName"> Type your name here:</label>
+            <input id="putName" type="text" required> <br> <br>
+            <label for="assistant">Choose your assistant: </label>
+            <select name="assistant" id="stored">
+                <option value="" disabled selected>Choose...</option>
+                <option value="angelica">Angelica</option>
+                <option value="tom">Tom</option>
+            </select> <br>
+            <input id="submitName" type="submit" value="Save data">
+        </div>
+        <div class="forget_name">
+            <label for="forgetName"> Forget your data?</label>
+            <input id="forgetName" type="reset" value="Forget">
+        </div>
+    </form>
+    <!-- start button that leads to the game -->
+    <button class="play_button" onclick="window.location.href='game.html' " type="button"> START </button>
+    <!-- Graphics of assistants -->
+    <div class="assistants">
+        <img class="angelica" src="images/angelica.png" alt="angelica_assistant">
+        <img class="tom" src="images/tom.png" alt="tom_assistant">
+    </div>
+    <!-- Social media buttons -->
+    <div class="sharethis-sticky-share-buttons"></div>
+</body>
+
+</html>

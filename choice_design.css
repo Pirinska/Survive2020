@@ -1,0 +1,103 @@
+body {
+
+    font-family: 'Roboto';
+    font-size: 1.2vmax;
+    background: linear-gradient(to right, #2b5876, #4e4376) !important;
+
+
+
+}
+
+/* Making images responsive */
+.angelica,
+.tom {
+
+    max-height: 70vh;
+    max-width: 70vw;
+}
+
+.angelica {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.tom {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+p {
+    color: white;
+    max-width: 40vw;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    width: 25%;
+}
+
+
+/* Styling buttons, making them responsive and functional */
+.play_button:hover,
+#submitName:hover,
+#forgetName:hover {
+    background-color: black;
+    color: white;
+}
+
+.play_button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 75%;
+    text-align: center;
+    font-size: 1.5vw;
+    height: 8%;
+    width: 20%;
+    border: none;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    color: white;
+    background-color: #8C1440;
+    transition: all 0.2s;
+
+
+}
+
+/* Styling the form for data storage */
+#submitName,
+#forgetName {
+
+    border: none;
+    border-radius: 1.5em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    color: #8C1440;
+    background-color: white;
+    transition: all 0.2s;
+    margin-top: 5%;
+    width: 7vw;
+    height: 6vh;
+    max-width: 7vw;
+    max-height: 6vh;
+}
+
+form {
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
